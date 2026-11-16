@@ -1,0 +1,27 @@
+# Christopher Springer
+# 11/13/2026
+
+# Create known variables
+monthly_sales = [12500.50, 14200.75, 11800.25,
+                 15600.00, 16250.50, 17500.00]
+
+months = ['January', 'February', 'March',
+          'April', 'May', 'June']
+
+# Enumerate Months
+for i, month in enumerate(months, start = 1):
+    print(f'Month {i}: {month}')
+
+print()
+
+# Analyze Monthly Sales
+for i, sale in enumerate(monthly_sales, start = 1):
+    print(f'Month {i} Sales: ${sale:,.2f}')
+
+print()
+
+# Both in one nested for loop
+for i, month in enumerate(months, start = 1):
+    for x, sale in enumerate(monthly_sales, start = 1):
+        if x == i:
+            print(f'Month {i} Sales: ${sale:,.2f}')

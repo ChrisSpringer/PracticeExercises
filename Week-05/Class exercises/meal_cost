@@ -1,0 +1,15 @@
+# Christopher Springer
+# 11/13/2026
+
+name = input('Enter your name: ')
+meal_price = float(input('Enter price of meal: '))
+tip = int(input('Enter the tip: '))
+sales_tax = 6.25
+meal_tax = meal_price * (sales_tax / 100)
+total_price = meal_price + tip + meal_tax
+
+print(f'Hi {name}, here are the results:')
+print(f'The price of the meal is: ${meal_price:>8.2f}')
+print(f'The tax of the meal is: ${meal_tax:>8.2f}')
+print(f'The tip of the meal is: ${tip:>8.2f}')
+print(f'The total price of the meal is: ${total_price:>8.2f}')
