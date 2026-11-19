@@ -8,7 +8,7 @@ class Product:
     store_name = 'StockSmart'
 
     # Constructor method
-    def __init__(self, name, category, price, quantity, reorder_level):
+    def __init__(self, name, category, price, quantity, reorder_level = 0):
         self.name = name
         self.category = category
         self.price = price
